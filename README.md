@@ -1,4 +1,3 @@
-```markdown
 # Discord OpenAI Bot
 
 This Discord bot uses OpenAI's API to generate human-like responses in chat conversations.
@@ -125,4 +124,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-```
