@@ -9,6 +9,24 @@ This Discord bot uses OpenAI's API to generate human-like responses in chat conv
 - Uses OpenAI's GPT model for generating responses
 - Easy to set up and customize
 
+## Discord Bot Setup
+
+Before installing and running the bot, you need to create a Discord application and bot user:
+
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
+2. Click on "New Application" and give your application a name.
+3. Go to the "Bot" tab in the left sidebar and click "Add Bot".
+4. Customize your bot's name and avatar as desired.
+5. Under the "Token" section, click "Copy" to copy your bot token. You'll need this for the `config.json` file.
+6. In the "Privileged Gateway Intents" section, enable "Message Content Intent".
+7. Go to the "OAuth2" tab in the left sidebar, then select "URL Generator".
+8. In the "Scopes" section, select "bot".
+9. In the "Bot Permissions" section, select the permissions your bot needs (at minimum: "Read Messages/View Channels", "Send Messages", and "Read Message History").
+10. Copy the generated URL at the bottom of the page.
+11. Open this URL in a new tab and select the server you want to add the bot to. You must have the "Manage Server" permission to add bots to a server.
+
+Now your Discord bot is set up and added to your server(s).
+
 ## Installation
 
 1. Clone this repository
@@ -27,7 +45,8 @@ Create a `config.json` file in the root directory with the following structure:
 }
 ```
 
-Replace `YOUR_DISCORD_BOT_TOKEN` and `YOUR_OPENAI_API_KEY` with your actual tokens.
+Replace `YOUR_DISCORD_BOT_TOKEN` with the token you copied in step 5 of the Discord Bot Setup.
+Replace `YOUR_OPENAI_API_KEY` with your OpenAI API key. If you don't have one, sign up at [OpenAI](https://beta.openai.com/signup/) and create an API key.
 
 ## Usage
 
@@ -108,6 +127,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 [MIT](https://choosealicense.com/licenses/mit/)
 ```
 
-This updated README.md now includes a detailed section on how to deploy the bot on DigitalOcean. It covers creating a Droplet, setting up the environment, installing dependencies, and running the bot using screen to keep it active in the background.
-
-Remember to replace `your_username` in the git clone URL with your actual GitHub username when you create the repository.
+This updated README.md now includes a detailed section on how to set up the Discord bot, including creating a Discord application, setting up the bot user, and adding the bot to servers. It also provides instructions on how to obtain the necessary tokens and keys for the `config.json` file.
