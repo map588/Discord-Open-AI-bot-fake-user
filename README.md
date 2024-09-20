@@ -31,24 +31,15 @@ Now your Discord bot is set up and added to your server(s).
 <h3>Local Installation</h3>
 
 1. Clone this repository:
-   - Using HTTPS:
-
-```
-git clone https://github.com/your_username/discord-openai-bot.git
-```
-
-   - Using SSH (recommended if you have SSH keys set up with GitHub):
 
 ```
 git clone https://github.com/Fruchtii/Discord-Open-AI-bot-fake-user.git
 ```
 
-   If you're having trouble cloning, make sure you have set up Git correctly (https://docs.github.com/en/get-started/quickstart/set-up-git).
-
 2. Navigate to the project directory:
 
 ```
-cd discord-openai-bot
+cd Discord-Open-AI-bot-fake-user
 ```
 
 3. Install the required packages:
@@ -85,7 +76,7 @@ The bot will respond to messages in channels it has access to. It uses OpenAI's 
 
 <h2>Deployment on DigitalOcean</h2>
 
-To deploy this bot on DigitalOcean, you can either use SSH or use the DigitalOcean console:
+To deploy this bot on DigitalOcean, you can either use SSH or the DigitalOcean console on the website:
 
 1. Create a DigitalOcean account if you don't have one.
 
@@ -95,7 +86,7 @@ To deploy this bot on DigitalOcean, you can either use SSH or use the DigitalOce
    - Choose a datacenter region close to your target audience
    - Add your SSH key or create a new one
 
-3. Once your Droplet is created, you can either SSH into it or use the DigitalOcean console:
+3. Once your Droplet is created, you can either use SSH or the DigitalOcean console:
    - To use SSH:
 
 ```
@@ -117,8 +108,8 @@ sudo apt install python3-pip python3-venv git -y
 5. Clone the repository:
 
 ```
-git clone https://github.com/your_username/discord-openai-bot.git
-cd discord-openai-bot
+git clone https://github.com/Fruchtii/Discord-Open-AI-bot-fake-user.git
+cd Discord-Open-AI-bot-fake-user
 ```
 
 6. Create a virtual environment and activate it:
