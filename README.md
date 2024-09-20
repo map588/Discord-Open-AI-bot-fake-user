@@ -1,14 +1,14 @@
-Discord OpenAI Bot
+<h1>Discord OpenAI Bot</h1>
 
 This Discord bot uses OpenAI's API to generate human-like responses in chat conversations.
 
-Features
+<h2>Features</h2>
 
 - Responds to messages in a human-like manner
 - Uses OpenAI's GPT model for generating responses
 - Easy to set up and customize
 
-Discord Bot Setup
+<h2>Discord Bot Setup</h2>
 
 Before installing and running the bot, you need to create a Discord application and bot user:
 
@@ -26,9 +26,9 @@ Before installing and running the bot, you need to create a Discord application 
 
 Now your Discord bot is set up and added to your server(s).
 
-Installation
+<h2>Installation</h2>
 
-Local Installation
+<h3>Local Installation</h3>
 
 1. Clone this repository:
    - Using HTTPS:
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 python bot.py
 ```
 
-Configuration
+<h2>Configuration</h2>
 
 Create a config.json file in the root directory with the following structure:
 
@@ -79,11 +79,11 @@ Create a config.json file in the root directory with the following structure:
 Replace YOUR_DISCORD_BOT_TOKEN with the token you copied in step 5 of the Discord Bot Setup.
 Replace YOUR_OPENAI_API_KEY with your OpenAI API key. If you don't have one, sign up at OpenAI (https://beta.openai.com/signup/) and create an API key.
 
-Usage
+<h2>Usage</h2>
 
 The bot will respond to messages in channels it has access to. It uses OpenAI's API to generate human-like responses based on the conversation context.
 
-Deployment on DigitalOcean
+<h2>Deployment on DigitalOcean</h2>
 
 To deploy this bot on DigitalOcean, you can either use SSH or use the DigitalOcean console:
 
@@ -167,10 +167,10 @@ To keep your bot running after you close the console, make sure to detach from t
 
 Note: When using the DigitalOcean console, you may experience occasional disconnects. If this happens, simply reconnect and reattach to the screen session to check on your bot.
 
-Contributing
+<h2>Contributing</h2>
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-License
+<h2>License</h2>
 
 MIT (https://choosealicense.com/licenses/mit/)
