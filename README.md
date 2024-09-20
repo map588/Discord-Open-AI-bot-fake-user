@@ -40,7 +40,7 @@ git clone https://github.com/your_username/discord-openai-bot.git
    - Using SSH (recommended if you have SSH keys set up with GitHub):
 
 ```
-git clone git@github.com:your_username/discord-openai-bot.git
+git clone https://github.com/Fruchtii/Discord-Open-AI-bot-fake-user.git
 ```
 
    If you're having trouble cloning, make sure you have set up Git correctly (https://docs.github.com/en/get-started/quickstart/set-up-git).
