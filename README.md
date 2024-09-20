@@ -7,6 +7,7 @@ This Discord bot uses OpenAI's API to generate human-like responses in chat conv
 - Responds to messages in a human-like manner
 - Uses OpenAI's GPT model for generating responses
 - Easy to set up and customize
+- reset the bots memory with the discord command !reset
 
 <h2>Discord Bot Setup</h2>
 
