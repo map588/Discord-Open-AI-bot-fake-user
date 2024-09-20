@@ -26,34 +26,42 @@ Before installing and running the bot, you need to create a Discord application 
 
 Now your Discord bot is set up and added to your server(s).
 
+```markdown
 ## Installation
 
-1. Clone this repository
-2. Install the required packages: `pip install -r requirements.txt`
-3. Create a `config.json` file with your Discord bot token and OpenAI API key
-4. Run the bot: `python bot.py`
+### Local Installation
 
-## Configuration
+1. Clone this repository:
+   - Using HTTPS:
+     ```
+     git clone https://github.com/your_username/discord-openai-bot.git
+     ```
+   - Using SSH (recommended if you have SSH keys set up with GitHub):
+     ```
+     git clone git@github.com:your_username/discord-openai-bot.git
+     ```
+   If you're having trouble cloning, make sure you have [set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git) correctly.
 
-Create a `config.json` file in the root directory with the following structure:
+2. Navigate to the project directory:
+   ```
+   cd discord-openai-bot
+   ```
 
-```json
-{
-  "discord_token": "YOUR_DISCORD_BOT_TOKEN",
-  "openai_api_key": "YOUR_OPENAI_API_KEY"
-}
-```
+3. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
 
-Replace `YOUR_DISCORD_BOT_TOKEN` with the token you copied in step 5 of the Discord Bot Setup.
-Replace `YOUR_OPENAI_API_KEY` with your OpenAI API key. If you don't have one, sign up at [OpenAI](https://beta.openai.com/signup/) and create an API key.
+4. Create a `config.json` file with your Discord bot token and OpenAI API key (see Configuration section)
 
-## Usage
-
-The bot will respond to messages in channels it has access to. It uses OpenAI's API to generate human-like responses based on the conversation context.
+5. Run the bot:
+   ```
+   python bot.py
+   ```
 
 ## Deployment on DigitalOcean
 
-To deploy this bot on DigitalOcean, follow these steps:
+To deploy this bot on DigitalOcean, you can either use SSH (as described in the previous steps) or use the DigitalOcean console:
 
 1. Create a DigitalOcean account if you don't have one.
 
@@ -63,12 +71,12 @@ To deploy this bot on DigitalOcean, follow these steps:
    - Choose a datacenter region close to your target audience
    - Add your SSH key or create a new one
 
-3. Once your Droplet is created, SSH into it:
-   ```
-   ssh root@your_droplet_ip
-   ```
+3. Once your Droplet is created, you can either SSH into it (see previous instructions) or use the DigitalOcean console:
+   - Go to your Droplet's page on DigitalOcean
+   - Click on "Access" in the left sidebar
+   - Click on "Launch Droplet Console" to open a web-based console
 
-4. Update the system and install required packages:
+4. In the console, update the system and install required packages:
    ```
    sudo apt update && sudo apt upgrade -y
    sudo apt install python3-pip python3-venv git -y
@@ -111,6 +119,14 @@ To deploy this bot on DigitalOcean, follow these steps:
 11. Detach from the screen session by pressing Ctrl+A, then D.
 
 Your bot should now be running on the DigitalOcean Droplet. To reattach to the screen session later, use:
+```
+screen -r discord-bot
+```
+
+To keep your bot running after you close the console, make sure to detach from the screen session instead of closing it.
+
+Note: When using the DigitalOcean console, you may experience occasional disconnects. If this happens, simply reconnect and reattach to the screen session to check on your bot.
+```
 ```
 screen -r discord-bot
 ```
